@@ -1,0 +1,22 @@
+#Brithany Sanchez
+#Period 1-2
+#11/27/2024
+  
+
+import simplegui
+
+def draw_handler(canvas):
+    #all drawing happens here
+    #canvas.draw_polygon([(x1,y1),(x2,y2),(x3,y3)], line_width, color)
+   
+    canvas.draw_polygon([(30,50),(40,50),(50,60)], 10, "black")
+    canvas.draw_polygon([(140,60),(140,50),(170,60)], 10, "black")
+    canvas.draw_polygon([(95,90),(100,75),(105,90)], 15, "black")
+    canvas.draw_polygon([(80,140),(150,140),(160,130)], 20, "black")
+   
+#library.create_frame(title, width, height)
+
+frame = simplegui.create_frame("CFU15 Happy Shapes",200,200)
+frame.set_canvas_background("rgb(65536, 256, 225)")
+frame.set_draw_handler(draw_handler)
+frame.start()
